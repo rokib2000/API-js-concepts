@@ -17,24 +17,24 @@
     <header>
       <h1 class="text-center text-warning my-3">Food Explore</h1>
     </header>
+
     <main>
+      <section class="container">
+        <div id="view-food-details"></div>
+      </section>
+
       <section class="container">
         <nav class="navbar my-3">
           <div class="container-fluid">
             <a class="navbar-brand">All Meals</a>
-            <form class="d-flex" role="search">
-              <input
-                id="input-meal"
-                class="form-control me-2"
-                type="search"
-                placeholder="Search Meal"
-                aria-label="Search"
-              />
-              <button id="search-meal" class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <div class="d-flex">
+              <input id="input-meal" class="form-control me-2" placeholder="Search Meal" />
+              <button onclick="searchFood()" class="btn btn-outline-success">Search</button>
+            </div>
           </div>
         </nav>
       </section>
+
       <section class="container">
         <div id="Meal-container" class="row row-cols-1 row-cols-md-3 g-4"></div>
       </section>
